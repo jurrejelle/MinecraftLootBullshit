@@ -1,0 +1,191 @@
+kaptainwutax/featureutils/loot/LootChest.java
+ kaptainwutax.featureutils.loot.LootChest
+ kaptainwutax.featureutils.loot.LootChest$Stack
+kaptainwutax/featureutils/loot/function/EnchantRandomlyFunction.java
+ kaptainwutax.featureutils.loot.function.EnchantRandomlyFunction
+kaptainwutax/featureutils/structure/generator/piece/stronghold/PrisonHall.java
+ kaptainwutax.featureutils.structure.generator.piece.stronghold.PrisonHall
+kaptainwutax/featureutils/structure/OldStructure.java
+ kaptainwutax.featureutils.structure.OldStructure
+ kaptainwutax.featureutils.structure.OldStructure$Config
+kaptainwutax/featureutils/structure/Fortress.java
+ kaptainwutax.featureutils.structure.Fortress
+seedFinding/RuinedPortalLoot.java
+ seedFinding.RuinedPortalLoot
+kaptainwutax/featureutils/loot/enchantment/Enchantment.java
+ kaptainwutax.featureutils.loot.enchantment.Enchantment
+kaptainwutax/featureutils/structure/device/CoordChecker.java
+ kaptainwutax.featureutils.structure.device.CoordChecker
+ kaptainwutax.featureutils.structure.device.CoordChecker$Head
+kaptainwutax/featureutils/loot/roll/BinomialRoll.java
+ kaptainwutax.featureutils.loot.roll.BinomialRoll
+kaptainwutax/featureutils/loot/roll/ConstantRoll.java
+ kaptainwutax.featureutils.loot.roll.ConstantRoll
+kaptainwutax/featureutils/structure/generator/piece/stronghold/Start.java
+ kaptainwutax.featureutils.structure.generator.piece.stronghold.Start
+seedFinding/VersionsTest.java
+ seedFinding.VersionsTest
+kaptainwutax/featureutils/structure/PillagerOutpost.java
+ kaptainwutax.featureutils.structure.PillagerOutpost
+kaptainwutax/featureutils/structure/Structure.java
+ kaptainwutax.featureutils.structure.Structure
+kaptainwutax/featureutils/structure/EndCity.java
+ kaptainwutax.featureutils.structure.EndCity
+kaptainwutax/featureutils/decorator/Decorator.java
+ kaptainwutax.featureutils.decorator.Decorator
+ kaptainwutax.featureutils.decorator.Decorator$Config
+ kaptainwutax.featureutils.decorator.Decorator$Data
+kaptainwutax/featureutils/loot/function/EnchantWithLevelsFunction.java
+ kaptainwutax.featureutils.loot.function.EnchantWithLevelsFunction
+kaptainwutax/featureutils/loot/function/LootFunction.java
+ kaptainwutax.featureutils.loot.function.LootFunction
+seedFinding/DesertPyramidProperties.java
+ seedFinding.DesertPyramidProperties
+kaptainwutax/featureutils/structure/generator/piece/StructurePiece.java
+ kaptainwutax.featureutils.structure.generator.piece.StructurePiece
+kaptainwutax/featureutils/structure/BuriedTreasure.java
+ kaptainwutax.featureutils.structure.BuriedTreasure
+ kaptainwutax.featureutils.structure.BuriedTreasure$Config
+kaptainwutax/featureutils/structure/device/node/TriangularNode.java
+ kaptainwutax.featureutils.structure.device.node.TriangularNode
+ kaptainwutax.featureutils.structure.device.node.TriangularNode$Analyser
+kaptainwutax/featureutils/structure/generator/piece/stronghold/SquareRoom.java
+ kaptainwutax.featureutils.structure.generator.piece.stronghold.SquareRoom
+kaptainwutax/featureutils/structure/Mineshaft.java
+ kaptainwutax.featureutils.structure.Mineshaft
+ kaptainwutax.featureutils.structure.Mineshaft$Config
+kaptainwutax/featureutils/loot/function/SetCountFunction.java
+ kaptainwutax.featureutils.loot.function.SetCountFunction
+kaptainwutax/featureutils/misc/SlimeChunk.java
+ kaptainwutax.featureutils.misc.SlimeChunk
+ kaptainwutax.featureutils.misc.SlimeChunk$Config
+ kaptainwutax.featureutils.misc.SlimeChunk$Data
+kaptainwutax/featureutils/structure/generator/piece/stronghold/Library.java
+ kaptainwutax.featureutils.structure.generator.piece.stronghold.Library
+kaptainwutax/featureutils/loot/item/Item.java
+ kaptainwutax.featureutils.loot.item.Item
+kaptainwutax/featureutils/loot/MCLootTables.java
+ kaptainwutax.featureutils.loot.MCLootTables
+kaptainwutax/featureutils/structure/RegionStructure.java
+ kaptainwutax.featureutils.structure.RegionStructure
+ kaptainwutax.featureutils.structure.RegionStructure$Config
+ kaptainwutax.featureutils.structure.RegionStructure$Data
+kaptainwutax/featureutils/structure/generator/piece/stronghold/LeftTurn.java
+ kaptainwutax.featureutils.structure.generator.piece.stronghold.LeftTurn
+kaptainwutax/featureutils/decorator/BiomelessDecorator.java
+ kaptainwutax.featureutils.decorator.BiomelessDecorator
+ kaptainwutax.featureutils.decorator.BiomelessDecorator$Config
+ kaptainwutax.featureutils.decorator.BiomelessDecorator$Data
+kaptainwutax/featureutils/loot/LootTable.java
+ kaptainwutax.featureutils.loot.LootTable
+kaptainwutax/featureutils/structure/device/node/Node.java
+ kaptainwutax.featureutils.structure.device.node.Node
+ kaptainwutax.featureutils.structure.device.node.Node$Analyser
+kaptainwutax/featureutils/structure/Monument.java
+ kaptainwutax.featureutils.structure.Monument
+kaptainwutax/featureutils/structure/generator/piece/stronghold/ChestCorridor.java
+ kaptainwutax.featureutils.structure.generator.piece.stronghold.ChestCorridor
+kaptainwutax/featureutils/structure/Igloo.java
+ kaptainwutax.featureutils.structure.Igloo
+kaptainwutax/featureutils/loot/entry/ItemEntry.java
+ kaptainwutax.featureutils.loot.entry.ItemEntry
+seedFinding/RuinedPortalProperties.java
+ seedFinding.RuinedPortalProperties
+kaptainwutax/featureutils/structure/TriangularStructure.java
+ kaptainwutax.featureutils.structure.TriangularStructure
+kaptainwutax/featureutils/structure/RuinedPortal.java
+ kaptainwutax.featureutils.structure.RuinedPortal
+ kaptainwutax.featureutils.structure.RuinedPortal$1
+kaptainwutax/featureutils/loot/enchantment/Enchantments.java
+ kaptainwutax.featureutils.loot.enchantment.Enchantments
+kaptainwutax/featureutils/structure/generator/piece/stronghold/SmallCorridor.java
+ kaptainwutax.featureutils.structure.generator.piece.stronghold.SmallCorridor
+seedFinding/BuriedTreasureExample.java
+ seedFinding.BuriedTreasureExample
+kaptainwutax/featureutils/structure/generator/FortressGenerator.java
+ kaptainwutax.featureutils.structure.generator.FortressGenerator
+kaptainwutax/featureutils/structure/Shipwreck.java
+ kaptainwutax.featureutils.structure.Shipwreck
+kaptainwutax/featureutils/decorator/DesertWell.java
+ kaptainwutax.featureutils.decorator.DesertWell
+ kaptainwutax.featureutils.decorator.DesertWell$Config
+ kaptainwutax.featureutils.decorator.DesertWell$Data
+kaptainwutax/featureutils/loot/item/ItemStack.java
+ kaptainwutax.featureutils.loot.item.ItemStack
+seedFinding/DesertPyramidExample.java
+ seedFinding.DesertPyramidExample
+kaptainwutax/featureutils/structure/SwampHut.java
+ kaptainwutax.featureutils.structure.SwampHut
+kaptainwutax/featureutils/structure/UniformStructure.java
+ kaptainwutax.featureutils.structure.UniformStructure
+kaptainwutax/featureutils/structure/Village.java
+ kaptainwutax.featureutils.structure.Village
+kaptainwutax/featureutils/structure/DesertPyramid.java
+ kaptainwutax.featureutils.structure.DesertPyramid
+kaptainwutax/featureutils/loot/LootContext.java
+ kaptainwutax.featureutils.loot.LootContext
+kaptainwutax/featureutils/structure/generator/piece/stronghold/PieceWeight.java
+ kaptainwutax.featureutils.structure.generator.piece.stronghold.PieceWeight
+kaptainwutax/featureutils/Feature.java
+ kaptainwutax.featureutils.Feature
+ kaptainwutax.featureutils.Feature$Config
+ kaptainwutax.featureutils.Feature$Data
+kaptainwutax/featureutils/loot/enchantment/EnchantmentInstance.java
+ kaptainwutax.featureutils.loot.enchantment.EnchantmentInstance
+kaptainwutax/featureutils/structure/generator/StrongholdGenerator.java
+ kaptainwutax.featureutils.structure.generator.StrongholdGenerator
+ kaptainwutax.featureutils.structure.generator.StrongholdGenerator$1
+ kaptainwutax.featureutils.structure.generator.StrongholdGenerator$2
+kaptainwutax/featureutils/structure/BastionRemnant.java
+ kaptainwutax.featureutils.structure.BastionRemnant
+kaptainwutax/featureutils/structure/OceanRuin.java
+ kaptainwutax.featureutils.structure.OceanRuin
+kaptainwutax/featureutils/structure/generator/piece/stronghold/SpiralStaircase.java
+ kaptainwutax.featureutils.structure.generator.piece.stronghold.SpiralStaircase
+kaptainwutax/featureutils/structure/device/StructureDevice.java
+ kaptainwutax.featureutils.structure.device.StructureDevice
+ kaptainwutax.featureutils.structure.device.StructureDevice$BitGroup
+kaptainwutax/featureutils/loot/entry/LootEntry.java
+ kaptainwutax.featureutils.loot.entry.LootEntry
+kaptainwutax/featureutils/structure/device/ParentInfo.java
+ kaptainwutax.featureutils.structure.device.ParentInfo
+kaptainwutax/featureutils/structure/NetherFossil.java
+ kaptainwutax.featureutils.structure.NetherFossil
+kaptainwutax/featureutils/loot/roll/LootRoll.java
+ kaptainwutax.featureutils.loot.roll.LootRoll
+kaptainwutax/featureutils/structure/JunglePyramid.java
+ kaptainwutax.featureutils.structure.JunglePyramid
+seedFinding/JungleTempleExample.java
+ seedFinding.JungleTempleExample
+kaptainwutax/featureutils/structure/Stronghold.java
+ kaptainwutax.featureutils.structure.Stronghold
+ kaptainwutax.featureutils.structure.Stronghold$Config
+ kaptainwutax.featureutils.structure.Stronghold$Data
+ kaptainwutax.featureutils.structure.Stronghold$Piece
+kaptainwutax/featureutils/loot/roll/UniformRoll.java
+ kaptainwutax.featureutils.loot.roll.UniformRoll
+kaptainwutax/featureutils/loot/LootGenerator.java
+ kaptainwutax.featureutils.loot.LootGenerator
+kaptainwutax/featureutils/decorator/EndGateway.java
+ kaptainwutax.featureutils.decorator.EndGateway
+ kaptainwutax.featureutils.decorator.EndGateway$Config
+ kaptainwutax.featureutils.decorator.EndGateway$Data
+kaptainwutax/featureutils/structure/Mansion.java
+ kaptainwutax.featureutils.structure.Mansion
+kaptainwutax/featureutils/structure/generator/piece/stronghold/PortalRoom.java
+ kaptainwutax.featureutils.structure.generator.piece.stronghold.PortalRoom
+kaptainwutax/featureutils/structure/device/node/UniformNode.java
+ kaptainwutax.featureutils.structure.device.node.UniformNode
+ kaptainwutax.featureutils.structure.device.node.UniformNode$Analyser
+kaptainwutax/featureutils/loot/LootPool.java
+ kaptainwutax.featureutils.loot.LootPool
+kaptainwutax/featureutils/structure/generator/piece/stronghold/FiveWayCrossing.java
+ kaptainwutax.featureutils.structure.generator.piece.stronghold.FiveWayCrossing
+kaptainwutax/featureutils/structure/generator/piece/stronghold/Stairs.java
+ kaptainwutax.featureutils.structure.generator.piece.stronghold.Stairs
+kaptainwutax/featureutils/loot/entry/EmptyEntry.java
+ kaptainwutax.featureutils.loot.entry.EmptyEntry
+kaptainwutax/featureutils/structure/generator/piece/stronghold/Corridor.java
+ kaptainwutax.featureutils.structure.generator.piece.stronghold.Corridor
+kaptainwutax/featureutils/structure/generator/piece/stronghold/RightTurn.java
+ kaptainwutax.featureutils.structure.generator.piece.stronghold.RightTurn
