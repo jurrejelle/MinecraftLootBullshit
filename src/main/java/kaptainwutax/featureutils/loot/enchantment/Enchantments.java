@@ -21,7 +21,7 @@ public class Enchantments {
     public final static HashSet<String> BREAKABLE = new HashSet<>(Arrays.asList("ENCHANTED_BOOK", "BOOK","BOW","CROSSBOW","GOLDEN_HELMET","GOLDEN_CHESTPLATE","GOLDEN_BOOTS","GOLDEN_LEGGINGS","GOLDEN_SWORD","GOLDEN_AXE","GOLDEN_HOE","GOLDEN_PICKAXE","GOLDEN_SHOVEL"));
     public final static HashSet<String> CROSSBOW = new HashSet<>(Arrays.asList("CROSSBOW","ENCHANTED_BOOK", "BOOK"));
     public final static HashSet<String> FISHING_ROD = new HashSet<>(Arrays.asList("FISHING_ROD","ENCHANTED_BOOK", "BOOK"));
-    public final static HashSet<String> DIGGER = new HashSet<>(Arrays.asList("GOLDEN_PICKAXE","GOLDEN_SHOVEL","GOLDEN_AXE","ENCHANTED_BOOK", "BOOK"));
+    public final static HashSet<String> DIGGER = new HashSet<>(Arrays.asList("GOLDEN_PICKAXE","GOLDEN_SHOVEL","GOLDEN_AXE","GOLDEN_HOE","ENCHANTED_BOOK", "BOOK"));
     public final static HashSet<String> TRIDENT = new HashSet<>(Arrays.asList("TRIDENT","ENCHANTED_BOOK", "BOOK"));
     public final static HashSet<String> WEARABLE = new HashSet<>(Arrays.asList("GOLDEN_CHESTPLATE","GOLDEN_LEGGINGS","GOLDEN_BOOTS","GOLDEN_HELMET","ENCHANTED_BOOK", "BOOK"));
     public final static HashSet<String> WEAPON = new HashSet<>(Arrays.asList("GOLDEN_SWORD","ENCHANTED_BOOK", "BOOK"));
