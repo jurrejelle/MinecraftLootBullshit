@@ -12,21 +12,20 @@ public class Enchantments {
     private final static Integer UNCOMMON = 5;
     private final static Integer RARE = 2;
     private final static Integer VERY_RARE = 1;
-    public final static HashSet<String>
-        ARMOR_HEAD = new HashSet<>(Arrays.asList("GOLDEN_HELMET","ENCHANTED_BOOK", "BOOK"));
-    public final static HashSet<String> ARMOR_CHEST = new HashSet<>(Arrays.asList("GOLDEN_CHESTPLATE","ENCHANTED_BOOK", "BOOK"));
-    public final static HashSet<String> ARMOR_FEET = new HashSet<>(Arrays.asList("GOLDEN_BOOTS","ENCHANTED_BOOK", "BOOK"));
-    public final static HashSet<String> ARMOR = new HashSet<>(Arrays.asList("GOLDEN_HELMET","GOLDEN_CHESTPLATE","GOLDEN_LEGGINGS","GOLDEN_BOOTS","ENCHANTED_BOOK", "BOOK"));
+    public final static HashSet<String> ARMOR_HEAD = new HashSet<>(Arrays.asList("GOLDEN_HELMET","DIAMOND_HELMET","ENCHANTED_BOOK", "BOOK"));
+    public final static HashSet<String> ARMOR_CHEST = new HashSet<>(Arrays.asList("GOLDEN_CHESTPLATE","DIAMOND_CHESTPLATE","ENCHANTED_BOOK", "BOOK"));
+    public final static HashSet<String> ARMOR_FEET = new HashSet<>(Arrays.asList("GOLDEN_BOOTS","DIAMOND_BOOTS","ENCHANTED_BOOK", "BOOK"));
+    public final static HashSet<String> ARMOR = new HashSet<>(Arrays.asList("GOLDEN_HELMET","DIAMOND_HELMET","GOLDEN_CHESTPLATE","DIAMOND_CHESTPLATE","GOLDEN_LEGGINGS","DIAMOND_LEGGINGS","GOLDEN_BOOTS","DIAMOND_BOOTS","ENCHANTED_BOOK", "BOOK"));
     public final static HashSet<String> BOW = new HashSet<>(Arrays.asList("BOW","ENCHANTED_BOOK", "BOOK"));
-    public final static HashSet<String> BREAKABLE = new HashSet<>(Arrays.asList("ENCHANTED_BOOK", "BOOK","BOW","CROSSBOW","GOLDEN_HELMET","GOLDEN_CHESTPLATE","GOLDEN_BOOTS","GOLDEN_LEGGINGS","GOLDEN_SWORD","GOLDEN_AXE","GOLDEN_HOE","GOLDEN_PICKAXE","GOLDEN_SHOVEL"));
+    public final static HashSet<String> BREAKABLE = new HashSet<>(Arrays.asList("ENCHANTED_BOOK", "BOOK","BOW","CROSSBOW","GOLDEN_HELMET","DIAMOND_HELMET","GOLDEN_CHESTPLATE","DIAMOND_CHESTPLATE","GOLDEN_BOOTS","DIAMOND_BOOTS","GOLDEN_LEGGINGS","DIAMOND_LEGGINGS","GOLDEN_SWORD","DIAMOND_SWORD","GOLDEN_AXE","DIAMOND_AXE","GOLDEN_HOE","DIAMOND_HOE","GOLDEN_PICKAXE","DIAMOND_PICKAXE","GOLDEN_SHOVEL","DIAMOND_SHOVEL"));
     public final static HashSet<String> CROSSBOW = new HashSet<>(Arrays.asList("CROSSBOW","ENCHANTED_BOOK", "BOOK"));
     public final static HashSet<String> FISHING_ROD = new HashSet<>(Arrays.asList("FISHING_ROD","ENCHANTED_BOOK", "BOOK"));
-    public final static HashSet<String> DIGGER = new HashSet<>(Arrays.asList("GOLDEN_PICKAXE","GOLDEN_SHOVEL","GOLDEN_AXE","GOLDEN_HOE","ENCHANTED_BOOK", "BOOK"));
+    public final static HashSet<String> DIGGER = new HashSet<>(Arrays.asList("GOLDEN_PICKAXE","DIAMOND_PICKAXE","GOLDEN_SHOVEL","DIAMOND_SHOVEL","GOLDEN_AXE","DIAMOND_AXE","GOLDEN_HOE","DIAMOND_HOE","ENCHANTED_BOOK", "BOOK"));
     public final static HashSet<String> TRIDENT = new HashSet<>(Arrays.asList("TRIDENT","ENCHANTED_BOOK", "BOOK"));
-    public final static HashSet<String> WEARABLE = new HashSet<>(Arrays.asList("GOLDEN_CHESTPLATE","GOLDEN_LEGGINGS","GOLDEN_BOOTS","GOLDEN_HELMET","ENCHANTED_BOOK", "BOOK"));
-    public final static HashSet<String> WEAPON = new HashSet<>(Arrays.asList("GOLDEN_SWORD","ENCHANTED_BOOK", "BOOK"));
-    public final static HashSet<String> DAMAGE = new HashSet<>(Arrays.asList("GOLDEN_SWORD","GOLDEN_AXE","ENCHANTED_BOOK", "BOOK"));
-    public final static HashSet<String> VANISHABLE = new HashSet<>(Arrays.asList("CROSSBOW","GOLDEN_HELMET","GOLDEN_CHESTPLATE","FISHING_ROD","GOLDEN_SHOVEL","GOLDEN_HOE","TRIDENT","GOLDEN_SWORD","GOLDEN_PICKAXE","GOLDEN_LEGGINGS","GOLDEN_BOOTS","BOW","GOLDEN_AXE","ENCHANTED_BOOK", "BOOK"));
+    public final static HashSet<String> WEARABLE = new HashSet<>(Arrays.asList("GOLDEN_CHESTPLATE","DIAMOND_CHESTPLATE","GOLDEN_LEGGINGS","DIAMOND_LEGGINGS","GOLDEN_BOOTS","DIAMOND_BOOTS","GOLDEN_HELMET","DIAMOND_HELMET","ENCHANTED_BOOK", "BOOK"));
+    public final static HashSet<String> WEAPON = new HashSet<>(Arrays.asList("GOLDEN_SWORD","DIAMOND_SWORD","ENCHANTED_BOOK", "BOOK"));
+    public final static HashSet<String> DAMAGE = new HashSet<>(Arrays.asList("GOLDEN_SWORD","DIAMOND_SWORD","GOLDEN_AXE","DIAMOND_AXE","ENCHANTED_BOOK", "BOOK"));
+    public final static HashSet<String> VANISHABLE = new HashSet<>(Arrays.asList("CROSSBOW","GOLDEN_HELMET","DIAMOND_HELMET","GOLDEN_CHESTPLATE","DIAMOND_CHESTPLATE","FISHING_ROD","GOLDEN_SHOVEL","DIAMOND_SHOVEL","GOLDEN_HOE","DIAMOND_HOE","TRIDENT","GOLDEN_SWORD","DIAMOND_SWORD","GOLDEN_PICKAXE","DIAMOND_PICKAXE","GOLDEN_LEGGINGS","DIAMOND_LEGGINGS","GOLDEN_BOOTS","DIAMOND_BOOTS","BOW","GOLDEN_AXE","DIAMOND_AXE","ENCHANTED_BOOK", "BOOK"));
     public static MCVersion Version = MCVersion.v1_16_1;
     public List<Enchantment> EnchantmentRegistry;
     public Enchantments() {

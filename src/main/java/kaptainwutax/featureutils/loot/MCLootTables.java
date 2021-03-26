@@ -4,8 +4,10 @@ import java.util.Arrays;
 import java.util.HashSet;
 import kaptainwutax.featureutils.loot.entry.EmptyEntry;
 import kaptainwutax.featureutils.loot.entry.ItemEntry;
+import kaptainwutax.featureutils.loot.function.ApplyDamageFunction;
 import kaptainwutax.featureutils.loot.function.EnchantRandomlyFunction;
 import kaptainwutax.featureutils.loot.function.EnchantWithLevelsFunction;
+import kaptainwutax.featureutils.loot.function.LootFunction;
 import kaptainwutax.featureutils.loot.item.Item;
 import kaptainwutax.featureutils.loot.roll.ConstantRoll;
 import kaptainwutax.featureutils.loot.roll.UniformRoll;
@@ -131,16 +133,16 @@ public class MCLootTables {
 					new ItemEntry(Item.ANCIENT_DEBRIS, 14).apply(constant(1)),
 					new ItemEntry(Item.NETHERITE_SCRAP, 10).apply(constant(1)),
 					new ItemEntry(Item.ANCIENT_DEBRIS).apply(constant(2)),
-					new ItemEntry(Item.DIAMOND_SWORD, 10) /* set_damage */ /* enchant_randomly */,
-					new ItemEntry(Item.DIAMOND_CHESTPLATE, 6) /* set_damage */ /* enchant_randomly */,
-					new ItemEntry(Item.DIAMOND_HELMET, 6) /* set_damage */ /* enchant_randomly */,
-					new ItemEntry(Item.DIAMOND_LEGGINGS, 6) /* set_damage */ /* enchant_randomly */,
-					new ItemEntry(Item.DIAMOND_BOOTS, 6) /* set_damage */ /* enchant_randomly */,
-					new ItemEntry(Item.DIAMOND_SWORD, 6) /* set_damage */,
-					new ItemEntry(Item.DIAMOND_CHESTPLATE, 5) /* set_damage */,
-					new ItemEntry(Item.DIAMOND_HELMET, 5) /* set_damage */,
-					new ItemEntry(Item.DIAMOND_BOOTS, 5) /* set_damage */,
-					new ItemEntry(Item.DIAMOND_LEGGINGS, 5) /* set_damage */,
+					new ItemEntry(Item.DIAMOND_SWORD, 10).apply(new ApplyDamageFunction(),new EnchantRandomlyFunction()) /* set_damage */ /* enchant_randomly */,
+					new ItemEntry(Item.DIAMOND_CHESTPLATE, 6).apply(new ApplyDamageFunction(),new EnchantRandomlyFunction()) /* set_damage */ /* enchant_randomly */,
+					new ItemEntry(Item.DIAMOND_HELMET, 6).apply(new ApplyDamageFunction(),new EnchantRandomlyFunction()) /* set_damage */ /* enchant_randomly */,
+					new ItemEntry(Item.DIAMOND_LEGGINGS, 6).apply(new ApplyDamageFunction(),new EnchantRandomlyFunction()) /* set_damage */ /* enchant_randomly */,
+					new ItemEntry(Item.DIAMOND_BOOTS, 6).apply(new ApplyDamageFunction(),new EnchantRandomlyFunction()) /* set_damage */ /* enchant_randomly */,
+					new ItemEntry(Item.DIAMOND_SWORD, 6).apply(new ApplyDamageFunction()) /* set_damage */,
+					new ItemEntry(Item.DIAMOND_CHESTPLATE, 5).apply(new ApplyDamageFunction()) /* set_damage */,
+					new ItemEntry(Item.DIAMOND_HELMET, 5).apply(new ApplyDamageFunction()) /* set_damage */,
+					new ItemEntry(Item.DIAMOND_BOOTS, 5).apply(new ApplyDamageFunction()) /* set_damage */,
+					new ItemEntry(Item.DIAMOND_LEGGINGS, 5).apply(new ApplyDamageFunction()) /* set_damage */,
 					new ItemEntry(Item.DIAMOND, 5).apply(uniform(1.0F, 3.0F))),
 			new LootPool(new UniformRoll(2.0F, 4.0F),
 					new ItemEntry(Item.SPECTRAL_ARROW).apply(uniform(5.0F, 21.0F)),
