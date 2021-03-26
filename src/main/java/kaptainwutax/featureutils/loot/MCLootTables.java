@@ -700,7 +700,7 @@ public class MCLootTables {
 					new ItemEntry(Item.CHAINMAIL_CHESTPLATE, 10),
 					new ItemEntry(Item.DIAMOND_HOE, 15),
 					new ItemEntry(Item.DIAMOND_CHESTPLATE, 5),
-					new ItemEntry(Item.ENCHANTED_BOOK, 10) /* enchant_randomly */),
+					new ItemEntry(Item.ENCHANTED_BOOK, 10).apply(new EnchantRandomlyFunction())),
 			new LootPool(new UniformRoll(1.0F, 4.0F),
 					new ItemEntry(Item.IRON_INGOT, 10).apply(uniform(1.0F, 4.0F)),
 					new ItemEntry(Item.GOLD_INGOT, 5).apply(uniform(1.0F, 4.0F)),
