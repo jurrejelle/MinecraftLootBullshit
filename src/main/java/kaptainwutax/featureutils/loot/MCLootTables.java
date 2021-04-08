@@ -4,10 +4,7 @@ import java.util.Arrays;
 import java.util.HashSet;
 import kaptainwutax.featureutils.loot.entry.EmptyEntry;
 import kaptainwutax.featureutils.loot.entry.ItemEntry;
-import kaptainwutax.featureutils.loot.function.ApplyDamageFunction;
-import kaptainwutax.featureutils.loot.function.EnchantRandomlyFunction;
-import kaptainwutax.featureutils.loot.function.EnchantWithLevelsFunction;
-import kaptainwutax.featureutils.loot.function.LootFunction;
+import kaptainwutax.featureutils.loot.function.*;
 import kaptainwutax.featureutils.loot.item.Item;
 import kaptainwutax.featureutils.loot.roll.ConstantRoll;
 import kaptainwutax.featureutils.loot.roll.UniformRoll;
@@ -326,7 +323,7 @@ public class MCLootTables {
 
 	public static final LootTable SHIPWRECK_MAP_CHEST = new LootTable(
 			new LootPool(new ConstantRoll(1),
-					new ItemEntry(Item.MAP) /* exploration_map*/),
+					new ItemEntry(Item.MAP)),
 			new LootPool(new ConstantRoll(3),
 					new ItemEntry(Item.COMPASS),
 					new ItemEntry(Item.MAP),
@@ -343,7 +340,7 @@ public class MCLootTables {
 					new ItemEntry(Item.POISONOUS_POTATO, 7).apply(uniform(2.0F, 6.0F)),
 					new ItemEntry(Item.CARROT, 7).apply(uniform(4.0F, 8.0F)),
 					new ItemEntry(Item.WHEAT, 7).apply(uniform(8.0F, 21.0F)),
-					new ItemEntry(Item.SUSPICIOUS_STEW, 10) /* set_stew_effect */,
+					new ItemEntry(Item.SUSPICIOUS_STEW, 10).apply(new setStewEffectFunction()),
 					new ItemEntry(Item.COAL, 6).apply(uniform(2.0F, 8.0F)),
 					new ItemEntry(Item.ROTTEN_FLESH, 5).apply(uniform(5.0F, 24.0F)),
 					new ItemEntry(Item.PUMPKIN, 2).apply(uniform(1.0F, 3.0F)),
