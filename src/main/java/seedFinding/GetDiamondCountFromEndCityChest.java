@@ -1,11 +1,19 @@
 package seedFinding;
 
+import kaptainwutax.biomeutils.source.EndBiomeSource;
 import kaptainwutax.featureutils.loot.LootContext;
 import kaptainwutax.featureutils.loot.function.EnchantWithLevelsFunction;
 import kaptainwutax.featureutils.loot.item.Item;
+import kaptainwutax.featureutils.structure.EndCity;
+import kaptainwutax.seedutils.mc.ChunkRand;
+import kaptainwutax.seedutils.mc.MCVersion;
+import kaptainwutax.seedutils.mc.pos.CPos;
+import kaptainwutax.terrainutils.terrain.EndChunkGenerator;
 import kaptainwutax.featureutils.loot.item.ItemStack;
 
 public class GetDiamondCountFromEndCityChest {
+    static EndCity END_CITY = new EndCity(MCVersion.v1_16_1);
+
     public static int getDiamondCount(LootContext lootContext) {
         int num_rolls = lootContext.nextInt(6-2+1) + 2;
         int[] table = new int[]{
@@ -75,4 +83,75 @@ public class GetDiamondCountFromEndCityChest {
         }
         return diamondCount;
     }
+    private static int getHeight(int chunkX, int chunkZ, EndChunkGenerator endChunkGenerator) {
+        ChunkRand rand = new ChunkRand(chunkX + chunkZ * 10387313L);
+        Rotation rotation = Rotation.randomRotation(rand);
+        int x_offset = 5;
+        int z_offset = 5;
+        if (rotation == Rotation.CLOCKWISE_90) {
+            x_offset = -5;
+        } else if (rotation == Rotation.CLOCKWISE_180) {
+            x_offset = -5;
+            z_offset = -5;
+        } else if (rotation == Rotation.COUNTERCLOCKWISE_90) {
+            z_offset = -5;
+        }
+
+        int x_center = (chunkX << 4) + 7;
+        int z_center = (chunkZ << 4) + 7;
+        int NW_corner = endChunkGenerator.getHeightInGround(x_center, z_center);
+        int SW_corner = endChunkGenerator.getHeightInGround(x_center, z_center + z_offset);
+        int NE_corner = endChunkGenerator.getHeightInGround(x_center + x_offset, z_center);
+        int SE_corner = endChunkGenerator.getHeightInGround(x_center + x_offset, z_center + z_offset);
+        return Math.min(Math.min(NW_corner, SW_corner), Math.min(NE_corner, SE_corner));
+    }
+    public static boolean checkEndCityStructure(long structureSeed, int regionX, int regionZ, ChunkRand chunkRand) {
+        CPos city1 = END_CITY.getInRegion(structureSeed, regionX, regionZ, chunkRand);
+        ChunkRand cityRand = new ChunkRand();
+
+        // rotations used to check for extra .advance() calls for loot
+        cityRand.setCarverSeed(structureSeed, city1.getX(), city1.getZ(), MCVersion.v1_16_5);
+        Rotation rotation = Rotation.randomRotation(cityRand);
+
+        // Middle three towers below fat tower can be offset by 1 block
+        int offset_x = cityRand.nextInt(2);
+        int offset_z = cityRand.nextInt(2);
+
+        // tested different rotations and checked how many advances are needed for each
+        int calls = 2;
+        switch(rotation) {
+            case NONE :
+                calls = 2;
+                break;
+
+            case CLOCKWISE_90 :
+                calls = 4;
+                break;
+
+            case CLOCKWISE_180 :
+                if (offset_z == 0) calls = 4;
+                else calls = 2;
+                break;
+
+            case COUNTERCLOCKWISE_90 :
+                calls = 2;
+                break;
+        }
+
+        //this is to ensure fat tower spawns -> 2/3 chance for initial fat tower, and then I just check for only one additional regular tower, which gaurantees fat above it
+        if (cityRand.nextInt(3) == 0) return false;
+        int tower_count = 1 + cityRand.nextInt(3);
+        if (tower_count != 1) return false;
+
+        // end biome check
+        EndBiomeSource endBiomeSource = new EndBiomeSource(MCVersion.v1_16_5, structureSeed);
+        if (!END_CITY.canSpawn(city1.getX(), city1.getZ(), endBiomeSource)) return false;
+
+        // end terrain check
+        EndChunkGenerator endChunkGenerator = new EndChunkGenerator(endBiomeSource);
+        int height = getHeight(city1.getX(), city1.getZ(), endChunkGenerator);
+        if (height < 60) return false;
+        return true;
+    }
 }
+
